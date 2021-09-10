@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body{
+    background-color: #222;
+    color: white;
+}
+h1{
+    text-align: center;
+    margin: 20px;
+}
+.menu{
+    background-color: #333;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    z-index: 50;
+}
+.menu>*{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    /* border: 2px solid gray; */
+}
+.menu .active{
+    background-color: #444;
+}
+.menu>*:hover{
+    background-color: #555;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:0 auto;
+    padding-bottom: 10vh;
+}
+.container .box{
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #333;
+}
+.platform{
+    background-color: gray;
+    font-size: 10px;
+    font-weight: bold;
+    color: #222;
+    margin: 5px 0;
+    padding: 2px 5px;
+    border-radius: 5px;
+    width: fit-content;
+}
+.starts{
+    color: greenyellow;
+}
+.ends{
+    color: red;
+}
+.counterclock{
+    color: aqua;
+}
+.linksbox{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.linksbox>*{
+    padding: 2px 5px;
+    border: 1px solid skyblue;
+    border-radius: 5px;
+    color: skyblue;
+    cursor: pointer;
+}
+.linksbox i{
+    font-size: 10px;
+}
+.linksbox>*:hover{
+    background-color: skyblue;
+    color: #222;
+}
+.linksbox .link{
+    margin-right: 10px;
+}
+.second{
+    display: none;
+}
+.fa-clock{
+    font-size: 30px;
+    color: burlywood;
+    margin-bottom: 10px;
+}
+.counterclock{
+    display: flex;
+}
+.counterclock>*{
+    margin-right:10px;
+}
+.gray{
+    color: gray;
+}
